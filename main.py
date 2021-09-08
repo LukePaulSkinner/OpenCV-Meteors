@@ -204,8 +204,8 @@ print('%10s' % "Frame", '%10s' % "Identity", "Distance")
 # The Following 4 lines were taken from the assignment brief
 nframes = int(sys.argv[1])
 for frame in range(0, nframes):
-    fn_left = sys.argv[2] % frame
-    fn_right = sys.argv[3] % frame
+    fn_left = "Images\\"+sys.argv[2] % frame
+    fn_right = "Images\\"+sys.argv[3] % frame
 
     # Code to check that images are reachable
     # Will output the image name that could not be found
